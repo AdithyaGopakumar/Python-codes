@@ -1,0 +1,65 @@
+user_input ='random'
+
+def show_menu():
+    print('Menu:')
+    print('1.To add an item enter: Add')
+    print('2.To mark as done enter: Done')
+    print('3.To view the list of items enter: Showlist')
+    print('4.To exit the program enter: Exit')
+    
+show_menu()
+Datalist =[]
+
+
+
+
+while user_input != 'Exit':
+    
+    
+    user_input = input('ENTER YOUR CHOISE:-')
+
+    if user_input == 'Add':
+        print('add an item')
+        item = input('what is to be done?')
+        Datalist.append(item)
+        print('Added the item',item)
+
+
+    elif user_input=='Done':
+        print('mark as done')  
+        item = input('which item should be marked as done?')
+        if item in Datalist:
+            
+             Datalist.remove(item)
+
+             print('the item that is marked as done is',item)
+             
+       
+        else:
+            print('The item mentioned is not in the ToDo list')    
+
+        
+
+
+
+
+    elif user_input=='Showlist':
+        print('The items corrently in your ToDo list are:- ')
+
+        print(Datalist)
+
+
+
+    elif user_input =='Exit':
+        print('goodbye') 
+    else:
+        print('enter a valid command like Add, Done, Showlist or Exit') 
+
+
+
+
+
+
+
+
+

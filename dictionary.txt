@@ -1,0 +1,20 @@
+
+
+full_month = {
+    'jan' : 'January',
+    'feb' : 'February',
+    'mar' : 'March',
+    'aprl' : 'April',
+    'may' : 'May',
+    'jun' : 'June',
+    'july' : 'July',
+   'aug' : 'August',
+    'sep' : 'September',
+    'oct' : 'October',
+    'nov' : 'November',
+    'dec' : 'December',
+}
+print(full_month.get('nov'))
+print(full_month['mar'])
+
+

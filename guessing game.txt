@@ -1,0 +1,27 @@
+
+# GUESSING GAME
+
+secret_word = "cat"
+user_input = ""             # leave it empty to declare it later in thw while loop
+guess_count = 0            # total number of guesses made by the user
+guess_remain = 3           # remaining guesses
+
+print('YOU HAVE THREE ATTEMPTS TO GUESS THE ANIMAL')
+
+while user_input != secret_word and guess_count < 3 :
+    user_input = input ("GUESS THE ANIMAL!")          # input the user input as a variable UNDER THE WHILE LOOP
+
+    if user_input == secret_word:
+        print("YOU'VE GUESSED THE CORRECT ANIMAL:" + secret_word)
+
+    elif user_input != secret_word:
+        print("you've guessed the wrong animal!")
+        guess_count+= 1
+        guess_remain-= 1
+        print('YOU HAVE ' + str (guess_remain) + ' chances remaining') # str is used becouse guess_remain is integer
+
+if user_input == secret_word:
+    print('YOU WIN')
+else:
+    print("GAME OVER!!")
+

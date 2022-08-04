@@ -1,0 +1,21 @@
+num1 = input("what is your first number?")                  # to get the first num input from user
+num2 = input ('what is your second number?')                # to get the second num input from user
+operation = input('which operation do you want to perform?') # to get which operation the user wish to perform
+
+
+if operation =="add":                                       # conditional statements
+    result = float(num1) + float (num2)
+
+elif operation == "sub":                                    # use elif command if there are multiple conditions
+    result = float(num1) - float(num2)                       # otherwise just use else
+
+elif operation == "mul":
+    result = float(num1) * float(num2)
+
+elif operation == "div":
+    result = float(num1) / float(num2)
+
+else:                                                   # for else function there is no arguments/parameter passed
+    print('choose a valid operation!')
+
+print(result)                                           # to print out the final result
